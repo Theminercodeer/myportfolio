@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-with">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <h1 id="Title">My Portfolio</h1>
+            <div class="navbar-list">
+                <a href="index.html">Home</a>
+                <a href="code.html">Code</a>
+            </div>
+
+        </div>
+
+        <div class="portfolio-title-wrapper">
+            <h2 class="subHeader">Code of Website</h2>
+            <div class="code-wrapper">
+                    <h3 class="python-code-title">index.html <a href="index.html" download="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+  <path d="M0 0h1024v1024H0z" fill="none" />
+  <path fill="currentColor" d="M505.7 661a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8" />
+</svg></a></h3>
+                    <pre class="python-code-wrapper">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name="viewport" content="width=device-width"&gt;
+        &lt;title&gt;Portfolio&lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="navbar"&gt;
+            &lt;h1 id="Title"&gt;My Portfolio&lt;/h1&gt;
+            &lt;div class="navbar-list"&gt;
+                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                &lt;a href="code.html"&gt;Code&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="portfolio-title-wrapper"&gt;
+            &lt;h2 class="subHeader"&gt;Scratch Projects:&lt;/h2&gt;
+            &lt;div class="portfolio-wrapper"&gt;
+                &lt;iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1386761488/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen&gt;&lt;/iframe&gt;
+                &lt;div class="scratchInformation"&gt;
+                    &lt;h3&gt;Cat and the Fidel:&lt;/h3&gt;
+                    
+                    &lt;ul&gt;Images:
+                        &lt;li&gt;https://ricardbunnel.com/bunnel-fiddle/&lt;/li&gt;
+                        &lt;li&gt;https://tbomusic.com/product/flute/&lt;/li&gt;
+                    &lt;/ul&gt;&lt;br&gt;
+                    &lt;ul&gt;Music:
+                        &lt;li&gt;https://25103911-lullabies-in-nature.mp3.pm/song/179229335-hey-diddle-diddle-the-cat-and-the-fiddle-at-night-classical-piano-instrumental/&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1376724964/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen&gt;&lt;/iframe&gt;
+                &lt;div class="scratchInformation"&gt;
+                    &lt;h3&gt;Galaxy Dragonfly:&lt;/h3&gt;
+                    &lt;ul&gt;Base on where you put an zero or one something will happen:
+                        &lt;li&gt;yellow = 1&lt;/li&gt;
+                        &lt;li&gt;blue = 0&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1370006167/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen&gt;&lt;/iframe&gt;
+                &lt;div class="scratchInformation"&gt;
+                    &lt;h3&gt;Universes Bell&lt;/h3&gt;
+
+                    &lt;ul&gt;Instructions:
+                        &lt;li&gt;Use this template to create your projects for CS1030 Click C to change the the sun tap over and over for higher pich&lt;/li&gt;
+                    &lt;/ul&gt;&lt;br&gt;
+                    &lt;ul&gt;SFX:
+                        &lt;li&gt;The Sounds and other assets come from scratch. This is the solar system with one start circling another. With the the bell of the stars what rings&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;a href="#Title" class="home-btn"&gt;Home&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="portfolio-title-wrapper"&gt;
+            &lt;h2 class="subHeader"&gt;Python Projects:&lt;/h2&gt;
+            &lt;div class="code-wrapper"&gt;
+                &lt;h3 class="python-code-title"&gt;cat_and_the_fidel.py&lt;/h3&gt;
+                &lt;pre class="python-code-wrapper"&gt;
+def instructions():
+    print("This is a game shell")
+
+def choice1():
+    ans = input("what insterment dose the cat play (flute or fidel) ")
+    while not (ans == 'flute' or ans == 'fidel'):
+        ans = input("type flute or fidel")
+    if ans == "fidel":
+        choice2()
+    else:
+        print("The cat dosen’t know how to play the flute")
+
+def choice2():
+    ans = input("Then your asked the what did the cow jumped over? (earth or moon)?")
+    while not (ans == 'earth' or ans == 'moon'):
+        ans = input("type Moon or Earth")
+    if ans == 'moon':
+        choice3()
+    else:
+        print("The cow couldn’t jump over the earth because it was to big. ")
+
+def choice3():
+    ans = input("What did the dish run a way with? (spoon or fork)?")
+    while not (ans == 'spoon' or ans == 'fork'):
+        ans = input("type (spoon or fork) ")
+    if ans == "fork":
+        print("The dish dosen’t know who the fork is")
+    else:
+        print("Correct you finsed the Correct path for the poem")
+
+def main():
+    instructions()
+    choice1()
+main()
+                &lt;/pre&gt;
+
+                &lt;h3 class="python-code-title"&gt;turtle_art.py&lt;/h3&gt;
+                &lt;pre class="python-code-wrapper"&gt;
+import turtle
+
+def draw_houses():
+    turtle.down()
+    for _ in range(4):
+        turtle.forward(50)
+        turtle.right(90)
+    turtle.right(180)
+    for _ in range(3):
+        turtle.right(120)
+        turtle.forward(50)
+    turtle.up()
+    turtle.forward(50)
+    turtle.setheading(0)
+
+# put your function here.
+
+def main():
+    turtle.up()
+    turtle.speed(0)
+    turtle.goto(150,0)
+    turtle.setheading(0)
+    turtle.clear()
+    answer = int(input('How many houses do you want to draw'))
+    for _ in range(answer):
+        draw_houses()
+
+    turtle.goto(0, 0)
+    cmAnswer = int(input('How many CM do you want to draw'))
+    for _ in range(cmAnswer):
+        cm()
+        
+    # put your code - to call the function drawing your initials below
+def cm():
+    turtle.setheading(90)
+    for i in range(4):
+        turtle.down()
+    turtle.setheading(-90)
+    turtle.forward(50)
+    turtle.setheading(180)
+    turtle.forward(50)
+    turtle.setheading(90)
+    turtle.forward(50)
+    turtle.up
+    turtle.forward(10)
+    turtle.setheading(0)
+    turtle.down
+    turtle.forward(50)
+    turtle.setheading(165)
+    turtle.forward(20)
+    turtle.setheading(30)
+    turtle.forward(20)
+    turtle.setheading(180)
+    turtle.forward(50)
+main()
+                &lt;/pre&gt;
+                &lt;a href="#Title" class="home-btn"&gt;Home&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code>
+                    </pre>
+
+                <h3 class="python-code-title">style.css <a href="index.html" download="style.css"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+  <path d="M0 0h1024v1024H0z" fill="none" />
+  <path fill="currentColor" d="M505.7 661a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8" />
+</svg></a></h3>
+                <pre class="python-code-wrapper">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My CSS*/
+
+#Title {
+    font-size: 2.5em;
+    padding: 0;
+
+}
+
+.portfolio-wrapper {
+    background-color: rgba(1, 1, 1, 0.10);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0 2rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+.subHeader {
+    font-size: 1.9rem;
+    padding-bottom: 1rem; 
+    padding: 2rem 3rem;
+    margin: 0 2rem;
+    background-color: rgba(73, 73, 73, 0.30);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.scratchInformation {
+    background-color: #fff;
+    padding: 1rem 1rem;
+    max-width: 40%;
+    overflow-wrap:anywhere;
+    margin-bottom: 1rem;
+}
+
+.scratchInformation h3 {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.scratch-iframe {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1rem;
+}
+
+.code-wrapper {
+    background-color: rgba(1, 1, 1, 0.10);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0 2rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.python-code-wrapper {
+    color: #fff;
+    background-color: rgb(28, 27, 27);
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    font-size: 1em;
+    border-radius: 1rem;
+    border-top-left-radius: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+.python-code-title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgba(35, 35, 35);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.home-btn {
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar #Title {
+    align-content: center;
+    padding: 1rem 2rem;
+    padding-top: 1rem;
+}
+
+.navbar-list {
+    align-content: space-around;
+}
+
+.navbar-list a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.navbar-list a:hover {
+    border-bottom: 3px solid black;
+}
+
+                </pre>
+        </div>
+</html>

@@ -6,17 +6,158 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 id="Title">My Portfolio</h1>
-        <div class="ScratchTitle">
-            <h2 class="subHeader">Scratch Projects:</h2>
-            <div class="scratchProjects">
-                <iframe src="https://scratch.mit.edu/projects/1386761488/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <div class="navbar">
+            <h1 id="Title">My Portfolio</h1>
+            <div class="navbar-list">
+                <a href="index.html">Home</a>
+                <a href="code.html">Code</a>
+            </div>
 
-                <iframe src="https://scratch.mit.edu/projects/1376724964/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                
-                <iframe src="https://scratch.mit.edu/projects/1370006167/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <div class="portfolio-title-wrapper">
+            <h2 class="subHeader">Scratch Projects:</h2>
+            <div class="portfolio-wrapper">
+                <iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1386761488/embed" allowtransparency="true"  frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div class="scratchInformation">
+                    <h3>Cat and the Fidel:</h3>
+                    
+                    <ul>Images:
+                        <li>https://ricardbunnel.com/bunnel-fiddle/</li>
+                        <li>https://tbomusic.com/product/flute/</li>
+                    </ul><br>
+                    <ul>Music:
+                        <li>https://25103911-lullabies-in-nature.mp3.pm/song/179229335-hey-diddle-diddle-the-cat-and-the-fiddle-at-night-classical-piano-instrumental/</li>
+                    </ul>
+                </div>
+                <iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1376724964/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div class="scratchInformation">
+                    <h3>Galaxy Dragonfly:</h3>
+                    <ul>Base on where you put an zero or one something will happen:
+                        <li>yellow = 1</li>
+                        <li>blue = 0</li>
+                </div>
+                <iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/1370006167/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <div class="scratchInformation">
+                    <h3>Universes Bell</h3>
+
+                    <ul>Instructions:
+                        <li>Use this template to create your projects for CS1030 Click C to change the the sun tap over and over for higher pich</li>
+                    </ul><br>
+                    <ul>SFX:
+                        <li>The Sounds and other assets come from scratch. This is the solar system with one start circling another. With the the bell of the stars what rings</li>
+                    </ul>
+                </div>
+                <a href="#Title" class="home-btn">Home</a>
             </div>
         </div>
+        
+
+        <div class="portfolio-title-wrapper">
+            <h2 class="subHeader">Python Projects:</h2>
+            <div class="code-wrapper">
+                    <h3 class="python-code-title">cat_and_the_fidel.py</h3>
+                    <pre class="python-code-wrapper">
+def instructions():
+    print("This is a game shell")
+
+def choice1():
+    ans = input("what insterment dose the cat play (flute or fidel) ")
+    while not (ans == 'flute' or ans == 'fidel'):
+        ans = input("type flute or fidel")
+    if ans == "fidel":
+        choice2()
+    else:
+        print("The cat dosen’t know how to play the flute")
+
+def choice2():
+    ans = input("Then your asked the what did the cow jumped over? (earth or moon)?")
+    while not (ans == 'earth' or ans == 'moon'):
+        ans = input("type Moon or Earth")
+    if ans == 'moon':
+        choice3()
+    else:
+        print("The cow couldn’t jump over the earth because it was to big. ")
+
+def choice3():
+    ans = input("What did the dish run a way with? (spoon or fork)?")
+    while not (ans == 'spoon' or ans == 'fork'):
+        ans = input("type (spoon or fork) ")
+    if ans == "fork":
+        print("The dish dosen’t know who the fork is")
+    else:
+        print("Correct you finsed the Correct path for the poem")
+
+def main():
+    instructions()
+    choice1()
+main()
+                    </pre>
+
+                    <h3 class="python-code-title">turtle_art.py</h3>
+                    <pre class="python-code-wrapper">
+import turtle
+
+def draw_houses():
+    turtle.down()
+    for _ in range(4):
+        turtle.forward(50)
+        turtle.right(90)
+    turtle.right(180)
+    for _ in range(3):
+        turtle.right(120)
+        turtle.forward(50)
+    turtle.up()
+    turtle.forward(50)
+    turtle.setheading(0)
+
+# put your function here.
+
+def main():
+    turtle.up()
+    turtle.speed(0)
+    turtle.goto(150,0)
+    turtle.setheading(0)
+    turtle.clear()
+    answer = int(input('How many houses do you want to draw'))
+    for _ in range(answer):
+        draw_houses()
+
+    turtle.goto(0, 0)
+    cmAnswer = int(input('How many CM do you want to draw'))
+    for _ in range(cmAnswer):
+        cm()
+        
+    # put your code - to call the function drawing your initials below
+def  cm():
+    turtle.setheading(90)
+    for i in range(4):
+        turtle.down()
+    turtle.setheading(-90)
+    turtle.forward(50)
+    turtle.setheading(180)
+    turtle.forward(50)
+    turtle.setheading(90)
+    turtle.forward(50)
+    turtle.up
+    turtle.forward(10)
+    turtle.setheading(0)
+    turtle.down
+    turtle.forward(50)
+    turtle.setheading(165)
+    turtle.forward(20)
+    turtle.setheading(30)
+    turtle.forward(20)
+    turtle.setheading(180)
+    turtle.forward(50)
+main()
+                    </pre>
+                    <a href="#Title" class="home-btn">Home</a>
+            </div>
+            
+            
+        </div>
+
 
     </body>
 </html>
